@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63d10f9823ded304f9f991186a28fa57, type: 3}
+  m_Name: GameSettings
+  m_EditorClassIdentifier: 
+  _gameSettings:
+    _maxEnemies: 10
+    _maxSpells: 3
+    _enemySpawnDelayRange: {x: 1, y: 3}
+    _playerConfig: {fileID: 11400000, guid: 6232115bb7232fa41903fad84299690c, type: 2}
+    _availableSpells:
+    - {fileID: 11400000, guid: 13eee2c22f36c774faad443eb894b763, type: 2}
+    - {fileID: 11400000, guid: 3c2dabe307fe7c74aac3c8422330f770, type: 2}
+    - {fileID: 11400000, guid: 67840a98e07cf924eb271a53ebcac955, type: 2}
+    - {fileID: 11400000, guid: cc51deb6b71873f4cab5a4b045f04f71, type: 2}
+    - {fileID: 11400000, guid: 69d162bf386643745bc9f5a33bb3f896, type: 2}
+    - {fileID: 11400000, guid: 19f1290c6093f9a44a5904a731565542, type: 2}
+    _enemyConfigs:
+    - {fileID: 11400000, guid: 5bca0967cee78ef4690e50a7a0feb35e, type: 2}
+    - {fileID: 11400000, guid: e241d529cd8081a479a2524e5f166943, type: 2}
+    - {fileID: 11400000, guid: 0b1bfea376cc57346a786ae76d347da0, type: 2}
