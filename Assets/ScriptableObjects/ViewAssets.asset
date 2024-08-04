@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab7dbd8cd81f49fb838700ce2fd133ac, type: 3}
+  m_Name: ViewAssets
+  m_EditorClassIdentifier: 
+  _assetRefs:
+  - m_AssetGUID: 1091f640b146dc64aaaf72e63a1f9f48
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  - m_AssetGUID: 01f038ccb15ea99478aaeac6f468b292
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
+  _types:
+  - MageTest.Core.UI.Combat.CombatView
+  - MageTest.Common.UI.Home.HomeView
+  _assetGroup: {fileID: 11400000, guid: b8b3f823624eaa04ab57bd908a929a91, type: 2}

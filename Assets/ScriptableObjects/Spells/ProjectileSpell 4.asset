@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3bfd4e5751247c78476798af2192fa5, type: 3}
   m_Name: ProjectileSpell 4
   m_EditorClassIdentifier: 
-  _icon: {fileID: 2788568348960109317, guid: daf3c2d1929d4bf48b81bb2c3c14fd76, type: 3}
+  _icon: {fileID: 226702753830753226, guid: daf3c2d1929d4bf48b81bb2c3c14fd76, type: 3}
   _spellComponents:
-  - {fileID: 11400000, guid: 2f519c01328647d43b0d98d674169e47, type: 2}
-  - {fileID: 11400000, guid: d0b20a13e4d156441aa7cf0c8c568ff1, type: 2}
+  - {fileID: 11400000, guid: 76d1f6ecd3c91aa49813708fb94d894b, type: 2}
+  - {fileID: 11400000, guid: 39851eda3715e2c4e8f52d9fac3f346e, type: 2}

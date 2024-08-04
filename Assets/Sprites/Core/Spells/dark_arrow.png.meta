@@ -1,0 +1,1161 @@
+fileFormatVersion: 2
+guid: 339f1085646495747bc250d6e05b3685
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 36528068998608053
+    second: dark_arrow_0
+  - first:
+      213: 4691577452007015135
+    second: dark_arrow_1
+  - first:
+      213: 668053661901102560
+    second: dark_arrow_2
+  - first:
+      213: -2443179588564955011
+    second: dark_arrow_3
+  - first:
+      213: -7509744477434302054
+    second: dark_arrow_4
+  - first:
+      213: 7173705970173147585
+    second: dark_arrow_5
+  - first:
+      213: 7230095752715596921
+    second: dark_arrow_6
+  - first:
+      213: 3965409870891878077
+    second: dark_arrow_7
+  - first:
+      213: -5227836908042412613
+    second: dark_arrow_8
+  - first:
+      213: 7336920856340784039
+    second: dark_arrow_9
+  - first:
+      213: 5881300370377784023
+    second: dark_arrow_10
+  - first:
+      213: 7587134421929172419
+    second: dark_arrow_11
+  - first:
+      213: -5533057070727011954
+    second: dark_arrow_12
+  - first:
+      213: 3777296908162088360
+    second: dark_arrow_13
+  - first:
+      213: -8905331474704600294
+    second: dark_arrow_14
+  - first:
+      213: -5573503607217095575
+    second: dark_arrow_15
+  - first:
+      213: 1568147900183515158
+    second: dark_arrow_16
+  - first:
+      213: 1140167473512870883
+    second: dark_arrow_17
+  - first:
+      213: 1299427611194606337
+    second: dark_arrow_18
+  - first:
+      213: 1927891712601885470
+    second: dark_arrow_19
+  - first:
+      213: -1853496345857571664
+    second: dark_arrow_20
+  - first:
+      213: -3844735080613369093
+    second: dark_arrow_21
+  - first:
+      213: -8935844421069667192
+    second: dark_arrow_22
+  - first:
+      213: -2863863297255969346
+    second: dark_arrow_23
+  - first:
+      213: -7681725022422267039
+    second: dark_arrow_24
+  - first:
+      213: 5735144184019617540
+    second: dark_arrow_25
+  - first:
+      213: -8873178619390339007
+    second: dark_arrow_26
+  - first:
+      213: 4637884663348035476
+    second: dark_arrow_27
+  - first:
+      213: 7552040571760734736
+    second: dark_arrow_28
+  - first:
+      213: -2721040102953412680
+    second: dark_arrow_29
+  - first:
+      213: 3961415873025962836
+    second: dark_arrow_30
+  - first:
+      213: 9107915685858904101
+    second: dark_arrow_31
+  - first:
+      213: -8015423957136680408
+    second: dark_arrow_32
+  - first:
+      213: -7325255943057956516
+    second: dark_arrow_33
+  - first:
+      213: 3185644142095748241
+    second: dark_arrow_34
+  - first:
+      213: 7496451416296514002
+    second: dark_arrow_35
+  - first:
+      213: -7407808221653616431
+    second: dark_arrow_36
+  - first:
+      213: 2473396049936638303
+    second: dark_arrow_37
+  - first:
+      213: 7566121427300796171
+    second: dark_arrow_38
+  - first:
+      213: 8683370147935402531
+    second: dark_arrow_39
+  - first:
+      213: -2400326153782118218
+    second: dark_arrow_40
+  - first:
+      213: -3637234517150126504
+    second: dark_arrow_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dark_arrow_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 436
+        width: 49
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b43ef0d516c18000800000000000000
+      internalID: 36528068998608053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_1
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 435
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd24c17e5d4db1140800000000000000
+      internalID: 4691577452007015135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_2
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 436
+        width: 50
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ed93881447654900800000000000000
+      internalID: 668053661901102560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_3
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 435
+        width: 47
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d70d915db15181ed0800000000000000
+      internalID: -2443179588564955011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_4
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 445
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a91b394af2708c790800000000000000
+      internalID: -7509744477434302054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_5
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 440
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c9f44b629f1e8360800000000000000
+      internalID: 7173705970173147585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_6
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 435
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9747ca8c7c5765460800000000000000
+      internalID: 7230095752715596921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_7
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 435
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db686579447f70730800000000000000
+      internalID: 3965409870891878077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 335
+        width: 54
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbd9478c70ef277b0800000000000000
+      internalID: -5227836908042412613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_9
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 336
+        width: 47
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a3e85b65aaf1d560800000000000000
+      internalID: 7336920856340784039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_10
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 335
+        width: 51
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dabdb1c6839e9150800000000000000
+      internalID: 5881300370377784023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_11
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 335
+        width: 48
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cd1a32fe8aea4960800000000000000
+      internalID: 7587134421929172419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_12
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 345
+        width: 30
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e816a59d8e1a633b0800000000000000
+      internalID: -5533057070727011954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_13
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 335
+        width: 28
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8adbe266687ab6430800000000000000
+      internalID: 3777296908162088360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_14
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 339
+        width: 53
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a13702bc438e96480800000000000000
+      internalID: -8905331474704600294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_15
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 336
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c7779bfffe6a2b0800000000000000
+      internalID: -5573503607217095575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_16
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 235
+        width: 54
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61096b1f43e23c510800000000000000
+      internalID: 1568147900183515158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_17
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 235
+        width: 42
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e3703bb640b2df00800000000000000
+      internalID: 1140167473512870883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_18
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 235
+        width: 44
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103c698178e780210800000000000000
+      internalID: 1299427611194606337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_19
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 235
+        width: 54
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1b0e075c4f31ca10800000000000000
+      internalID: 1927891712601885470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_20
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 255
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b4cca8c4ee0746e0800000000000000
+      internalID: -1853496345857571664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_21
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 235
+        width: 56
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaae8080d1c4aac0800000000000000
+      internalID: -3844735080613369093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_22
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 235
+        width: 53
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8848cf9d7d08df380800000000000000
+      internalID: -8935844421069667192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_23
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 138
+        width: 51
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd67c921838148d0800000000000000
+      internalID: -2863863297255969346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_24
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 135
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16b8a48aac7056590800000000000000
+      internalID: -7681725022422267039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 135
+        width: 53
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4070320df33579f40800000000000000
+      internalID: 5735144184019617540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_26
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 135
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 148d5aace032cd480800000000000000
+      internalID: -8873178619390339007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_27
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 135
+        width: 56
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f771c57831d5040800000000000000
+      internalID: 4637884663348035476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_28
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 154
+        width: 9
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 012f22933ec3ec860800000000000000
+      internalID: 7552040571760734736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_29
+      rect:
+        serializedVersion: 2
+        x: 527
+        y: 135
+        width: 50
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b79edb617cec3ad0800000000000000
+      internalID: -2721040102953412680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_30
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 135
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4537e4f7fb6c9f630800000000000000
+      internalID: 3961415873025962836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_31
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 45
+        width: 29
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52804db7f01d56e70800000000000000
+      internalID: 9107915685858904101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 36
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82a56b6e06e73c090800000000000000
+      internalID: -8015423957136680408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_33
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 45
+        width: 27
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c512639d786775a90800000000000000
+      internalID: -7325255943057956516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_34
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 35
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19ccb6e087ea53c20800000000000000
+      internalID: 3185644142095748241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_35
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 45
+        width: 28
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d1e35068deb80860800000000000000
+      internalID: 7496451416296514002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_36
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 35
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d83e10bbad223990800000000000000
+      internalID: -7407808221653616431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_37
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 35
+        width: 49
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f51e3515a94435220800000000000000
+      internalID: 2473396049936638303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_38
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 45
+        width: 20
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b074cb1e953400960800000000000000
+      internalID: 7566121427300796171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_39
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 35
+        width: 29
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32abbe0a427818870800000000000000
+      internalID: 8683370147935402531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_40
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 39
+        width: 47
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8bcb2a41450bed0800000000000000
+      internalID: -2400326153782118218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dark_arrow_41
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 36
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e2a704a72f58dc0800000000000000
+      internalID: -3637234517150126504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

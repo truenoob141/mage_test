@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Numerics;
 using System.Threading;
 using Cysharp.Threading.Tasks;
 using MageTest.Core.CombatSystem;
@@ -9,6 +10,9 @@ using MageTest.Core.Interfaces;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using Zenject;
+using Quaternion = UnityEngine.Quaternion;
+using Vector2 = UnityEngine.Vector2;
+using Vector3 = UnityEngine.Vector3;
 
 namespace MageTest.Core.Behaviours
 {
@@ -26,6 +30,10 @@ namespace MageTest.Core.Behaviours
         private InputActionReference _rotateInputAction;
         [SerializeField]
         private InputActionReference _attackInputAction;
+        [SerializeField]
+        private SpriteRenderer _spriteRenderer;
+        [SerializeField]
+        private Sprite[] _sprites;
 
         public bool IsValid => _health > 0;
         public Vector3 Position => transform.position;
@@ -43,6 +51,8 @@ namespace MageTest.Core.Behaviours
         private float _health;
         private float _defenseMultiplier;
         private float _spellDelay;
+
+        private int _rotateIndex;
 
         private void Start()
         {
@@ -68,12 +78,11 @@ namespace MageTest.Core.Behaviours
 
         private void LateUpdate()
         {
+            if (!IsValid)
+                return;
+            
             var dir = _rotateInputAction.action.ReadValue<Vector2>();
-            if (dir != Vector2.zero)
-            {
-                float angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle, Vector3.back);
-            }
+            Rotate(dir);
 
             if (_attackInputAction.action.IsPressed())
                 CastSpell();
@@ -98,12 +107,17 @@ namespace MageTest.Core.Behaviours
 
         private void FixedUpdate()
         {
+            if (!IsValid)
+                return;
+            
             var value = _moveInputAction.action.ReadValue<Vector2>();
             _rigidbody.velocity = value * _moveSpeed;
         }
 
         public void Respawn(PlayerConfig config)
         {
+            Rotate(Vector2.up);
+            
             _moveSpeed = config._moveSpeed;
             _health = config._health;
             _defenseMultiplier = 1 - Mathf.Clamp01(config._defense * 0.01f);
@@ -128,6 +142,21 @@ namespace MageTest.Core.Behaviours
                 OnDead?.Invoke(this);
         }
 
+        private void Rotate(Vector2 dir)
+        {
+            if (dir == Vector2.zero)
+                return;
+
+            float angle = Mathf.Atan2(dir.x, dir.y) * Mathf.Rad2Deg;
+            int index = (int) (angle / 45);
+            if (index < 0)
+                index = 8 + index;
+
+            _rotateIndex = index;
+            _spriteRenderer.sprite = _sprites[index];
+            // transform.rotation = Quaternion.AngleAxis(angle, Vector3.back);
+        }
+
         private void CastSpell()
         {
             if (_lastCastSpellTime + _spellDelay > Time.time)
@@ -135,11 +164,12 @@ namespace MageTest.Core.Behaviours
 
             _lastCastSpellTime = Time.time;
 
-            var lookDir = transform.rotation * Vector3.up;
+            // var lookDir = transform.rotation * Vector3.up;
             // With velocity
             // Vector3 moveDir = _rigidbody.velocity.normalized;
             // float dot = Vector3.Dot(moveDir, lookDir);
             // var targetPos = transform.position + 99999 * (dot > 0.9f || dot < -0.9f ? lookDir : moveDir + lookDir);
+            var lookDir = Quaternion.Euler(0, 0, (_rotateIndex * -45)) * Vector3.up;
             var targetPos = transform.position + lookDir * 99999;
 
             var currentSpell = _playerController.GetCurrentSpell();

@@ -16,11 +16,11 @@ MonoBehaviour:
     _maxEnemies: 10
     _maxSpells: 3
     _enemySpawnDelayRange: {x: 1, y: 3}
+    _viewAssetRefCollection: {fileID: 11400000, guid: 00ee46caae7d137448f3cc1437c077b3, type: 2}
     _playerConfig: {fileID: 11400000, guid: 6232115bb7232fa41903fad84299690c, type: 2}
     _availableSpells:
     - {fileID: 11400000, guid: 13eee2c22f36c774faad443eb894b763, type: 2}
     - {fileID: 11400000, guid: 3c2dabe307fe7c74aac3c8422330f770, type: 2}
-    - {fileID: 11400000, guid: 67840a98e07cf924eb271a53ebcac955, type: 2}
     - {fileID: 11400000, guid: cc51deb6b71873f4cab5a4b045f04f71, type: 2}
     - {fileID: 11400000, guid: 69d162bf386643745bc9f5a33bb3f896, type: 2}
     - {fileID: 11400000, guid: 19f1290c6093f9a44a5904a731565542, type: 2}

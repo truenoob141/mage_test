@@ -5,6 +5,7 @@ using System.Threading;
 using Cysharp.Threading.Tasks;
 using MageTest.Core.Interfaces;
 using MageTest.Core.Pools;
+using MageTest.Core.Services;
 using UnityEngine;
 using UnityEngine.Assertions;
 using Zenject;
@@ -17,9 +18,13 @@ namespace MageTest.Core.Controllers
         [Inject]
         private readonly EnemyPool _enemyPool;
         [Inject]
-        private readonly PlayerController _playerController;
+        private readonly EventDispatcher _eventDispatcher;
+        [Inject]
+        private readonly GameService _gameService;
         [Inject]
         private readonly GameSettings _gameSettings;
+        [Inject]
+        private readonly PlayerController _playerController;
 
         private float _nextSpawn;
         private int _enemyCount;
@@ -27,23 +32,41 @@ namespace MageTest.Core.Controllers
         private Camera _cam;
         private readonly List<IAliveEntity> _enemies = new();
 
+        private IAliveEntity _player;
         private CancellationTokenSource _cts;
 
         public void Initialize()
         {
             _cts = new CancellationTokenSource();
 
-            var player = _playerController.GetPlayer();
-            player.OnDead += OnPlayerDead;
+            _eventDispatcher.Subscribe<OnGameStarted>(OnGameStartedHandler);
+            _eventDispatcher.Subscribe<OnGameEnd>(OnGameEndHandler);
         }
 
         public void Dispose()
         {
+            _eventDispatcher.Unsubscribe<OnGameStarted>(OnGameStartedHandler);
+            _eventDispatcher.Unsubscribe<OnGameEnd>(OnGameEndHandler);
+            
             _cts?.Cancel();
+        }
+
+        private void OnGameStartedHandler()
+        {
+            _player = _playerController.GetPlayer();
+            _player.OnDead += OnPlayerDeadHandler;
+        }
+
+        private void OnGameEndHandler()
+        {
+            _player.OnDead -= OnPlayerDeadHandler;
         }
 
         public void Tick()
         {
+            if (!_gameService.IsValidGame)
+                return;
+
             if (_enemyCount >= _gameSettings._maxEnemies || Time.time < _nextSpawn)
                 return;
 
@@ -85,8 +108,8 @@ namespace MageTest.Core.Controllers
             _enemyPool.Despawn(entity);
             _enemies.Remove(entity);
         }
-        
-        private void OnPlayerDead(IAliveEntity entity)
+
+        private void OnPlayerDeadHandler(IAliveEntity entity)
         {
             _enemyCount = 0;
             _enemies.ForEach(e => e.OnDead -= OnEntityDead);

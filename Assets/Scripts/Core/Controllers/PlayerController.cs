@@ -10,23 +10,37 @@ using Random = UnityEngine.Random;
 
 namespace MageTest.Core.Controllers
 {
-    public class PlayerController : IInitializable
+    public class PlayerController : IInitializable, IDisposable
     {
+        [Inject]
+        private readonly EventDispatcher _eventDispatcher;
         [Inject]
         private readonly GameSettings _gameSettings;
 
         public event Action OnPlayerRespawned;
-        
+
         private CharacterBehaviour _player;
 
         private int _selectedSpell;
         private Spell[] _spells;
 
+        public void Initialize()
+        {
+            _eventDispatcher.Subscribe<OnGameStarted>(OnGameStartedHandler);
+            _eventDispatcher.Subscribe<OnGameEnd>(OnGameEndHandler);
+        }
+
+        public void Dispose()
+        {
+            _eventDispatcher.Unsubscribe<OnGameStarted>(OnGameStartedHandler);
+            _eventDispatcher.Unsubscribe<OnGameEnd>(OnGameEndHandler);
+        }
+
         public Spell GetCurrentSpell()
         {
             return _spells[_selectedSpell];
         }
-        
+
         public Spell GetCurrentSpell(out int index)
         {
             if (_spells == null)
@@ -54,7 +68,9 @@ namespace MageTest.Core.Controllers
                     return false;
             }
             else if (++i >= _spells.Length)
+            {
                 return false;
+            }
 
             _selectedSpell = index = i;
             return true;
@@ -63,21 +79,25 @@ namespace MageTest.Core.Controllers
         public IAliveEntity GetPlayer()
         {
             if (_player == null)
-            {
-                var player = Object.FindFirstObjectByType<CharacterBehaviour>();
-                player.OnDead += OnPlayerDead;
-                
-                _player = player;
-                Respawn();
-            }
+                InitializePlayer();
 
             return _player;
         }
 
-        private void OnPlayerDead(IAliveEntity entity)
+        private void OnPlayerDeadHandler(IAliveEntity entity)
         {
             Assert.AreEqual(entity, _player);
             Respawn();
+        }
+
+        private void OnGameStartedHandler()
+        {
+            InitializePlayer();
+        }
+        
+        private void OnGameEndHandler()
+        {
+            _player.OnDead -= OnPlayerDeadHandler;
         }
 
         private void Respawn()
@@ -94,10 +114,13 @@ namespace MageTest.Core.Controllers
             OnPlayerRespawned?.Invoke();
         }
 
-        public void Initialize()
+        private void InitializePlayer()
         {
-            // Initialize player!
-            GetPlayer();
+            var player = Object.FindFirstObjectByType<CharacterBehaviour>();
+            player.OnDead += OnPlayerDeadHandler;
+
+            _player = player;
+            Respawn();
         }
     }
 }
