@@ -9,6 +9,7 @@ namespace MageTest
     [Serializable]
     public class GameSettings
     {
+        public int _mapSize = 32;
         public int _maxEnemies = 10;
         public int _maxSpells = 3;
         public Vector2 _enemySpawnDelayRange = new Vector2(1f, 3f);

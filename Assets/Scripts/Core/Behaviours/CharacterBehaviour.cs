@@ -23,6 +23,8 @@ namespace MageTest.Core.Behaviours
         private readonly SpellFactory _spellFactory;
         [Inject]
         private readonly PlayerController _playerController;
+        [Inject]
+        private readonly GameSettings _gameSettings;
 
         [SerializeField]
         private InputActionReference _moveInputAction;
@@ -54,12 +56,16 @@ namespace MageTest.Core.Behaviours
 
         private int _rotateIndex;
 
+        private float _mapSize;
+        
         private void Start()
         {
             _cam = Camera.main;
             _token = this.GetCancellationTokenOnDestroy();
             _rigidbody = GetComponent<Rigidbody2D>();
             _collider = GetComponent<CircleCollider2D>();
+
+            _mapSize = _gameSettings._mapSize;
         }
 
         private void OnEnable()
@@ -86,10 +92,10 @@ namespace MageTest.Core.Behaviours
 
             if (_attackInputAction.action.IsPressed())
                 CastSpell();
-
+            
             float halfSize = Size * 0.5f;
-            float height = _cam.orthographicSize;
-            float width = height * _cam.aspect;
+            float width = _mapSize * 0.5f;
+            float height = width;
             
             var pos = transform.position;
             if (pos.x > width - halfSize)
@@ -103,6 +109,10 @@ namespace MageTest.Core.Behaviours
                 pos.y = -height + halfSize;
 
             transform.position = pos;
+            _cam.transform.position = new Vector3(
+                pos.x,
+                pos.y,
+                _cam.transform.position.z);
         }
 
         private void FixedUpdate()
