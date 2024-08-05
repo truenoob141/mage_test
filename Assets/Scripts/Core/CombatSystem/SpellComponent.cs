@@ -4,6 +4,9 @@ using UnityEngine;
 
 namespace MageTest.Core.CombatSystem
 {
+    /// <summary>
+    ///  Base class for spell components (projectile, damage, aoe, heal etc)
+    /// </summary>
     public abstract class SpellComponent : ScriptableObject
     {
         public virtual SpellComponentData Prepare(SpellComponentData data)

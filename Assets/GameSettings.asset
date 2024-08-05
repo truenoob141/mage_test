@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: GameSettings
   m_EditorClassIdentifier: 
   _gameSettings:
+    _mapSize: 32
     _maxEnemies: 10
     _maxSpells: 3
     _enemySpawnDelayRange: {x: 1, y: 3}
@@ -24,6 +25,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: cc51deb6b71873f4cab5a4b045f04f71, type: 2}
     - {fileID: 11400000, guid: 69d162bf386643745bc9f5a33bb3f896, type: 2}
     - {fileID: 11400000, guid: 19f1290c6093f9a44a5904a731565542, type: 2}
+    - {fileID: 11400000, guid: 3ccc07b4bc164f2428db27e2d4b5713b, type: 2}
     _enemyConfigs:
     - {fileID: 11400000, guid: 5bca0967cee78ef4690e50a7a0feb35e, type: 2}
     - {fileID: 11400000, guid: e241d529cd8081a479a2524e5f166943, type: 2}

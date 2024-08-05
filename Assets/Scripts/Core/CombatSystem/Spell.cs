@@ -8,6 +8,9 @@ using Zenject;
 namespace MageTest.Core.CombatSystem
 {
     [CreateAssetMenu(fileName = "Spell", menuName = "Spell")]
+    /// <summary>
+    /// Collection of spell components that are executed in order
+    /// </summary>
     public sealed class Spell : ScriptableObject
     {
         [Inject]

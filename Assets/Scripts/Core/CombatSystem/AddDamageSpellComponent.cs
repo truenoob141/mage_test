@@ -4,8 +4,8 @@ using UnityEngine;
 
 namespace MageTest.Core.CombatSystem
 {
-    [CreateAssetMenu(fileName = "Damage", menuName = "Spell Components/Damage")]
-    public class DamageSpellComponent : SpellComponent
+    [CreateAssetMenu(fileName = "AddDamage", menuName = "Spell Components/Add Damage")]
+    public class AddDamageSpellComponent : SpellComponent
     {
         [SerializeField]
         private int _damage = 1;

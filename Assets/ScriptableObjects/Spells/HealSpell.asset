@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3bfd4e5751247c78476798af2192fa5, type: 3}
+  m_Name: HealSpell
+  m_EditorClassIdentifier: 
+  _icon: {fileID: -7921052967969465774, guid: daf3c2d1929d4bf48b81bb2c3c14fd76, type: 3}
+  _spellComponents:
+  - {fileID: 11400000, guid: cc29db0f0a69b1d4bb8adda95feca339, type: 2}
+  - {fileID: 11400000, guid: 006dce47d504bda4fa20e4f59bdf89e5, type: 2}

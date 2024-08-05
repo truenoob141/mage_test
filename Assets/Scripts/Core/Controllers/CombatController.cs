@@ -8,7 +8,7 @@ using Zenject;
 
 namespace MageTest.Core.Controllers
 {
-    public class GameController : IInitializable, IDisposable
+    public class CombatController : IInitializable, IDisposable
     {
         [Inject]
         private readonly CombatPresenter _combatPresenter;

@@ -38,9 +38,10 @@ namespace MageTest.Core.Behaviours
         private Sprite[] _sprites;
 
         public bool IsValid => _health > 0;
+        public float Health => _health;
+        public int MaxHealth => _maxHealth;
         public Vector3 Position => transform.position;
         public float Size => _collider == null ? 1f : _collider.radius * 2;
-
         public event Action<IAliveEntity> OnDead;
 
         private Camera _cam;
@@ -51,6 +52,7 @@ namespace MageTest.Core.Behaviours
         private float _lastCastSpellTime = float.MinValue;
         private float _moveSpeed;
         private float _health;
+        private int _maxHealth;
         private float _defenseMultiplier;
         private float _spellDelay;
 
@@ -130,6 +132,7 @@ namespace MageTest.Core.Behaviours
             
             _moveSpeed = config._moveSpeed;
             _health = config._health;
+            _maxHealth = config._health;
             _defenseMultiplier = 1 - Mathf.Clamp01(config._defense * 0.01f);
             _spellDelay = config._spellDelay;
 
@@ -144,12 +147,20 @@ namespace MageTest.Core.Behaviours
 
         public void TakeDamage(int damage)
         {
-            if (_health <= 0)
+            if (!IsValid)
                 return;
 
             _health -= damage * _defenseMultiplier;
             if (_health <= 0)
                 OnDead?.Invoke(this);
+        }
+
+        public void Heal(int amount)
+        {
+            if (!IsValid)
+                return;
+
+            _health = Mathf.Min(_maxHealth, _health + amount);
         }
 
         private void Rotate(Vector2 dir)

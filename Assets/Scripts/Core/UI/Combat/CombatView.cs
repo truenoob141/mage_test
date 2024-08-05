@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using MageTest.Core.Controllers;
+using MageTest.Core.Interfaces;
 using MageTest.Gui;
 using UnityEngine;
 using UnityEngine.Assertions;
@@ -17,10 +18,14 @@ namespace MageTest.Core.UI.Combat
         [SerializeField]
         private InputActionReference _changeSpellAction;
         [SerializeField]
+        private Slider _healthBar;
+        [SerializeField]
         private Image[] _icons;
         [SerializeField]
         private Toggle[] _toggles;
 
+        private IAliveEntity _player;
+        
         protected override void OnEnable()
         {
             _changeSpellAction.action.Enable();
@@ -38,6 +43,17 @@ namespace MageTest.Core.UI.Combat
             _playerController.OnPlayerRespawned -= OnPlayerRespawned;
         }
 
+        private void Update()
+        {
+            if (!Helper.IsValid(_player))
+            {
+                _healthBar.value = 1;
+                return;
+            }
+            
+            _healthBar.value = Mathf.Clamp01(_player.Health / _player.MaxHealth);
+        }
+
         private void OnChangeSpellAction(InputAction.CallbackContext context)
         {
             float dir = context.ReadValue<float>();
@@ -51,6 +67,8 @@ namespace MageTest.Core.UI.Combat
         {
             Assert.AreEqual(_toggles.Length, _icons.Length);
 
+            _player = _playerController.GetPlayer();
+            
             int index;
             var spell = _playerController.GetCurrentSpell(out index);
             if (spell == null)

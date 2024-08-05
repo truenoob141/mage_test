@@ -4,16 +4,21 @@ using UnityEngine;
 
 namespace MageTest.Core.CombatSystem
 {
+    /// <summary>
+    /// Pipeline data for spell components
+    /// </summary>
     public class SpellComponentData
     {
         public IEntity Source { get; }
-        public IEntity Target { get; }
+        public IEntity Target => _targets.Count > 0 ? _targets[0] : null;
         public Vector3? SourcePosition { get; }
         public Vector3? TargetPosition { get; }
         public int Damage { get; private set; }
 
-        public int TargetNumber => 1;
+        public int TargetNumber => _targets.Count;
 
+        private readonly List<IEntity> _targets = new(1);
+        
         public SpellComponentData(IEntity source, Vector3 targetPosition)
         {
             Source = source;
@@ -25,7 +30,8 @@ namespace MageTest.Core.CombatSystem
             IEntity target)
         {
             Source = source;
-            Target = target;
+            
+            _targets.Add(target);
         }
 
         public SpellComponentData(
@@ -40,6 +46,16 @@ namespace MageTest.Core.CombatSystem
         {
             if (Target != null && (!onlyValid || Target.IsValid))
                 yield return Target;
+        }
+        
+        public void AddTarget(IEntity target)
+        {
+            _targets.Add(target);
+        }
+
+        public void ClearTargets()
+        {
+            _targets.Clear();
         }
 
         public void AddDamage(int damage)

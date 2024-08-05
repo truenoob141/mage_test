@@ -20,12 +20,15 @@ namespace MageTest.Core.Behaviours
         private readonly SpellFactory _spellFactory;
 
         public bool IsValid => _health > 0;
+        public float Health => _health;
+        public int MaxHealth => _maxHealth;
         public Vector3 Position => transform.position;
         public float Size => _collider == null ? 1f : _collider.radius * 2;
 
         public event Action<IAliveEntity> OnDead;
 
         private float _health;
+        private int _maxHealth;
         private float _defenseMultiplier;
         private float _moveSpeed;
         private float _spellDelay;
@@ -70,6 +73,7 @@ namespace MageTest.Core.Behaviours
         public void ApplyConfig(EnemyConfig config)
         {
             _health = config._health;
+            _maxHealth = config._health;
             _defenseMultiplier = 1 - Mathf.Clamp01(config._defense * 0.01f);
             _moveSpeed = config._moveSpeed;
             _spellDelay = config._spellDelay;
@@ -84,6 +88,14 @@ namespace MageTest.Core.Behaviours
             _health -= value * _defenseMultiplier;
             if (_health <= 0)
                 OnDead?.Invoke(this);
+        }
+        
+        public void Heal(int amount)
+        {
+            if (!IsValid)
+                return;
+
+            _health = Mathf.Min(_maxHealth, _health + amount);
         }
 
         public Vector3 GetVelocity()

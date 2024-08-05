@@ -20,7 +20,7 @@ namespace MageTest.Di
             Container.BindInterfacesAndSelfTo<SpellComponentFactory>().FromNew().AsSingle();
             
             Container.BindInterfacesAndSelfTo<EnemyController>().FromNew().AsSingle();
-            Container.BindInterfacesAndSelfTo<GameController>().FromNew().AsSingle();
+            Container.BindInterfacesAndSelfTo<CombatController>().FromNew().AsSingle();
             Container.BindInterfacesAndSelfTo<GameService>().FromNew().AsSingle();
             Container.BindInterfacesAndSelfTo<PlayerController>().FromNew().AsSingle();
             
